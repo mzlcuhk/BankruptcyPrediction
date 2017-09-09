@@ -1,0 +1,9 @@
+\section{Results}
+\label{sec:results}
+%Describe the results of the experiments, including their immediate implications (e.g., ``the result suggests that technique A performs better than technique B''). If your work is purely theoretical, then this section (as well as the previous section) might be replaced with mathematical proofs.
+
+The AUC scores obtained during training is shown in Table~\ref{tab:TrainWider} (for widening operation) and Table~\ref{tab:TrainDepth} (for deepening operation). Data from Table~\ref{tab:TrainWider} indicate that the AUC score does not have a significant improvement from 64~neurons to 128~neurons during the widening operation. This is the primary reason why the widening operations were not pursued after 128~neurons. As hidden layers are added, the improvement in AUC score reduces as we add layer8. This is why we stop at layer8. All the AUC scores are reported on the $20\%$ of the original dataset which was not shown to SMOTE while sampling.
+
+Table \ref{tab:compare} compares the results obtained by Net2Net technique with the conventional training method. It can be observed that the network trained using Net2Net technique performs better than the conventional method in all the datasets. The Table also shows the results obtained by \cite{zikeba2016ensemble} on the same dataset using FCN and Ensemble Boosted trees. Their best results for this dataset were obtained by using Ensemble Boosted Trees. We outperform their FCN for all the years and their Ensemble boosted trees for years 1 and 5.
+
+

@@ -1,0 +1,19 @@
+\section{Introduction}
+
+Financial stability of a company/firm or a bank is really important for its proper functioning. Foreseeing the financial conditions of a firm based on various econometric measures is one of the most important mission concerned by every industry participant like investors shareholders, lawmakers, central banks, auditors and managers \cite{NNModel}. So, prediction of bankruptcy of an enterprise is of great importance. This is a problem that affects the economy on a global scale \cite{zhang2013rule}. Therefore, various methods have been developed including statistical hypothesis testing, statistical modeling and machine learning techniques. 
+
+However, the complexity and diversity of the real business world makes such predictions very challenging. For example, the financial indicators describing the business conditions sometimes can not exactly reflect the true operation status of the firm, and as one possible extreme result, it may cause a rare, hard-to-predict bankruptcy with series of serious damages as consequence, which is known as a black swan event. To effectively identify those companies with higher financial risk based on these inaccuracy indicators is one problem which needs to overcome \cite{altman2010corporate}.  Moreover, the most concerned issue here associated with bankruptcy prediction is that the data set is typically skewed, because there are more companies with normal operation than companies going bankrupt. This problem has gained increasingly attention from researchers because it will cause classification models to favour the majority class over the minority class. It is also considered as a challenge by the Data Mining Community \cite{yang200610}.
+
+\subsection{Dataset}\label{subsec:dataset}
+
+In this work, we use the Polish companies bankruptcy dataset. The dataset is hosted on UCI’s Machine Learning Repository \cite{data}. It is about bankruptcy classification of Polish companies. The dataset is collected over 2007-2012. The whole dataset is divided into five separate subsets namely: Year1, Year2, Year3, Year4, Year5. Each year forecast the company financial status for the year 2013.
+
+%Each data point has 64 features like X1: (net profit / total assets), X2:	(total liabilities / total assets), X3:	(working capital / total assets), X4: (current assets / short-term liabilities) etc. 
+ 
+
+
+\subsection{Research contributions}
+
+In this paper we prove that the Neural Networks are capable of predicting if a company can go bankrupt with high accuracy. Our Neural Network outperforms the neural network designed by~\cite{zikeba2016ensemble} and even their best network in a few cases. We also show that the knowledge gained from training a model for year1 dataset could be utilized while training networks on subsequent datasets for faster learning.
+
+%Describe clearly and concisely what your paper {\bf uniquely} contributes to the research community, i.e., that has never been done before.

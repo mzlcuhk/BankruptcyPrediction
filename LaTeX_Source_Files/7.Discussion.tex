@@ -1,0 +1,9 @@
+\section{Discussion}
+\label{sec:discuss}
+%Describe limitations of your work as well as further-ranging implications (e.g., ``our work suggests that doing XYZ in general may be a useful approach to...'').
+
+High AUC score for year 2,3,4 and 5 for the Net2Net in Table \ref{tab:compare} signifies that the data has some correlation over different years, thus utilizing the information learnt about the two classes during year1 helps in learning for subsequent years. 
+
+We conducted experiments by chopping the year1 network at layer 7,6,5 and 4. We obtained best results for the years 2, 3, 4 and 5 when we chop at layer4. An intuition for this could be that the features learnt in layer5 and onwards of network 1 were highly specific to year1 which did not contribute much to the other years. But the features learnt till layer 4 were generic to all the years.
+
+
